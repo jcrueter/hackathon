@@ -5,9 +5,9 @@
   <p>Age: <%= @developer.age %></p>
   <p>Skills: <%= @developer.skills %></p>
   <p>Trait: <%= @developer.trait %></p>
-  <p>Country: <%= @developer.country_id %></p>
-<%= image_tag @developer.image_url %>
+  <p>Location: <%= @developer.country.name %></p>
+  <%= image_tag @developer.image_url %>
 
-<hr>
+  <hr>
 
-<%= link_to "[Edit]", edit_developer_path(@developer.id) %>
+  <%= link_to "[Edit]", edit_developer_path(@developer)%>
