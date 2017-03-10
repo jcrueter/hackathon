@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+dev1 = Developer.create!( { first_name: "Sarah", last_name: "Polan", age: 31, trait: "Open minded", skills: "Ruby", image_url: "https://goo.gl/wB6q9q" } )
+dev2 = Developer.create!( { first_name: "First", last_name: "Last", age: 10, trait: "Whatever", skills: "Rails", image_url: "https://goo.gl/wB6q9q" } )
+dev3 = Developer.create!( { first_name: "Michiel", last_name: "Rueter", age: 38, trait: "Cool", skills: "Computers", image_url: "https://goo.gl/wB6q9q" } )
