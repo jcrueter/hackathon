@@ -1,5 +1,5 @@
 class Developer < ApplicationRecord
-  belongs_to :valley
+  belongs_to :country
   def self.order_by_name
     order(:first_name)
   end
