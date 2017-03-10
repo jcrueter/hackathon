@@ -7,7 +7,6 @@ one:
   trait: MyString
   skills: MyString
   image_url: MyString
-  country_id: 1
 
 two:
   first_name: MyString
@@ -16,4 +15,3 @@ two:
   trait: MyString
   skills: MyString
   image_url: MyString
-  country_id: 1

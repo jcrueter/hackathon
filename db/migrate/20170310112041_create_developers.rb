@@ -7,7 +7,6 @@ class CreateDevelopers < ActiveRecord::Migration[5.0]
       t.string :trait
       t.string :skills
       t.string :image_url
-      t.integer :country_id
 
       t.timestamps
     end
