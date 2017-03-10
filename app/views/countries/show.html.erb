@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @country.name %>
+</p>
+
+<h4>List of Developers</h4>
+
+<% if @country.developer.any? %>
+  <ul>
+    <% @country.developer.each do |developer| %>
+      <li><%= developer.full_name %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no developers available in this country.</p>
+<% end %>
+
+<%= link_to 'Edit', edit_valley_path(@valley) %> |
+<%= link_to 'Back', valleys_path %>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
