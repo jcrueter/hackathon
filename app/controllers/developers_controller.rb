@@ -1,5 +1,5 @@
 class DevelopersController < ApplicationController
-  
+
   def index
     @developers = Developer.all
   end
@@ -30,18 +30,17 @@ class DevelopersController < ApplicationController
 
   @developer = Developer.new(developer_params)
 
-  if @developer.save
-     redirect_to @developer
-  else
-     render 'new'
+    if @developer.save
+       redirect_to @developer
+    else
+       render 'new'
+    end
   end
-end
 
 
   private
 
   def developer_params
-    params.require(:developer).permit(:first_name, :last_name, :age, :trait, :skills, :image_url)
+    params.require(:developer).permit(:first_name, :last_name, :age, :trait, :skills, :image_url, :country_id)
   end
-
 end
