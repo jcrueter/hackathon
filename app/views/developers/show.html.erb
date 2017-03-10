@@ -2,7 +2,11 @@
 
 <h1><%= @developer.full_name%></h1>
 
-<p>Age: <%= @developer.age %></p>
-<p>Age: <%= @developer.skills %></p>
-<p>Age: <%= @developer.trait %></p>
+  <p>Age: <%= @developer.age %></p>
+  <p>Skills: <%= @developer.skills %></p>
+  <p>Trait: <%= @developer.trait %></p>
 <%= image_tag @developer.image_url %>
+
+<hr>
+
+<%= link_to "[Edit]", edit_developer_path(@developer.id) %>
