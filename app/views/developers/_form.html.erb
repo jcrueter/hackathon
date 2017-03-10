@@ -1,0 +1,23 @@
+<%= form_for(Developer.new) do |f| %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+
+  <%= f.label :trait %>
+  <%= f.text_field :trait %>
+
+  <%= f.label :skills %>
+  <%= f.text_field :skills %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.submit (@developer.new_record? ? "Create" : "Update") %>
+
+<% end %>
