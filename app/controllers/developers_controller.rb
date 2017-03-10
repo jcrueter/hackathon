@@ -41,7 +41,7 @@ end
   private
 
   def developer_params
-    params.require(:developer).permit(:first_name, :last_name, :age, :trait, :skills, :image_url)
+    params.require(:developer).permit(:first_name, :last_name, :age, :trait, :skills, :image_url, :country_id)
   end
 
 end
