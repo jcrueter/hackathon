@@ -1,5 +1,5 @@
 <h1>Developers</h1>
 
 <% @developers.each do |developer| %>
-  <p><%= developer.first_name %></p>
+  <p><%= link_to developer.full_name, developer_path(developer.id) %></p>
 <% end %>
