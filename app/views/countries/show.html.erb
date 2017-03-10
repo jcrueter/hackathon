@@ -7,9 +7,9 @@
 
 <h4>List of Developers</h4>
 
-<% if @country.developer.any? %>
+<% if @country.developers.any? %>
   <ul>
-    <% @country.developer.each do |developer| %>
+    <% @country.developers.each do |developer| %>
       <li><%= developer.full_name %></li>
     <% end %>
   </ul>
